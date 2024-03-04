@@ -166,7 +166,7 @@ class _TaskState extends State<Task> {
                       width: 200,
                       child: LinearProgressIndicator(
                         color: Colors.white,
-                        value: widget.day / (ratingToDays[widget.rating] ?? 1),
+                        value: widget.day / (ratingToDays[widget.rating] ?? 1).toDouble(),
                       ),
                     ),
                   ),

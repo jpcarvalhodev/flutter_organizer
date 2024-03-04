@@ -49,19 +49,18 @@ class TaskDao {
   List<Task> _toList(List<Map<String, dynamic>> taskList) {
     final List<Task> tasks = [];
     for (Map<String, dynamic> row in taskList) {
-      final Task task = Task(row[_title], row[_rating], row[_image], row[_day]);
+      final Task task = Task(row[_title], row[_image], row[_rating], row[_day]);
       tasks.add(task);
     }
     return tasks;
   }
 
   Map<String, dynamic> _toMap(Task task) {
-    final Map<String, dynamic> taskMap = {};
+    final Map<String, dynamic> taskMap = Map();
     taskMap[_title] = task.title;
     taskMap[_rating] = task.rating;
     taskMap[_image] = task.image;
     taskMap[_day] = task.day;
     return taskMap;
   }
-  
 }
