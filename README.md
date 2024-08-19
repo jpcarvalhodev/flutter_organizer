@@ -19,7 +19,7 @@ Welcome to the Task Organizer repository! This project is a task organizer app b
 1. Clone this repository:
 
 ```
-git clone https://github.com/jpcarvalho23/flutter_organizer.git
+git clone https://github.com/jpcarvalhodev/flutter_organizer.git
 ```
 
 2. Navigate into the project directory:
